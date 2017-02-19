@@ -51,8 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Documents.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="People.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="RepositoryPeople.cs" />
   </ItemGroup>
   <ItemGroup>

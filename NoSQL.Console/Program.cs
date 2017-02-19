@@ -20,10 +20,20 @@ namespace NoSQL.Console
 
             //var result = rep.Insert(p).Result;
 
-            var get = rep.Get("7a6afeec-a378-46f1-a3ad-d25fa6b99fec").Result;
-            get.Name = "Alterando registro 7a6afeec-a378-46f1-a3ad-d25fa6b99fec";
+            //var get = rep.FindAsync("7a6afeec-a378-46f1-a3ad-d25fa6b99fec").Result;
+            //get.Name = "Alterando registro 7a6afeec-a378-46f1-a3ad-d25fa6b99fec";
 
-            var r = rep.Update(get).Result;
+            ///var r = rep.UpdateAsync(get).Result;
+            ///
+
+            var lista0 = rep.AllAsync(c => c.Active)
+                .Result;
+
+            var lista1 = rep.AllAsync(c => c.Active == false, o => o.Name)
+                .Result;
+
+            var lista3 = rep.AllAsync(c => c.Active, o => o.Name, s => new { s.Id, s.Name })
+                .Result;            
 
         }
     }
