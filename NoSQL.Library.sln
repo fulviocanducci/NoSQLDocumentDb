@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoSQL.Library", "NoSQL.Library\NoSQL.Library.csproj", "{33159F01-7865-4A3E-879D-689B9173DDBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoSQL.Console", "NoSQL.Console\NoSQL.Console.csproj", "{2EAB60E8-366C-47E3-B889-1A5D6E166E8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{33159F01-7865-4A3E-879D-689B9173DDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33159F01-7865-4A3E-879D-689B9173DDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33159F01-7865-4A3E-879D-689B9173DDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAB60E8-366C-47E3-B889-1A5D6E166E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAB60E8-366C-47E3-B889-1A5D6E166E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAB60E8-366C-47E3-B889-1A5D6E166E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAB60E8-366C-47E3-B889-1A5D6E166E8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
