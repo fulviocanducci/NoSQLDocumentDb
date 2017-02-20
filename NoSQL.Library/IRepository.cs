@@ -2,6 +2,7 @@
 using Microsoft.Azure.Documents.Client;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
@@ -17,5 +18,6 @@ namespace NoSQL.Library
         Task<IEnumerable<T>> AllAsync(Expression<Func<T, bool>> where);
         Task<IEnumerable<T>> AllAsync<TKey>(Expression<Func<T, bool>> where, Expression<Func<T, TKey>> orderBy);
         Task<IEnumerable<TDocument>> AllAsync<TKey, TDocument>(Expression<Func<T, bool>> where, Expression<Func<T, TKey>> orderBy, Expression<Func<T, TDocument>> select);
+        IOrderedQueryable Query();
     }
 }

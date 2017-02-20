@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-
+//https://docs.microsoft.com/en-us/azure/documentdb/documentdb-get-started
 namespace NoSQL.Library
 {
     public abstract class Repository<T> : IRepository<T>
@@ -77,6 +77,10 @@ namespace NoSQL.Library
                 .Select(select)
                 .AsDocumentQuery();
             return await GetAllListAsync(docQuery);
+        }
+        public IOrderedQueryable Query()
+        {
+            return GetOrderedQueryableAsync();
         }
 
         #region _private
